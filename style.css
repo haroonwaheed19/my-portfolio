@@ -5,16 +5,62 @@
     font-family: 'poppins', sans-serif;
 }
 
-ul{
+/* ul{
     list-style-type: none;
     display: flex;
 }
 li{
     padding-right: 15px;
-}
+} */
 
 body
 {
     background-color: #080808;
     color: white;
+}
+
+#header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/SRP_5063-transformed.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px 10%;
+}
+#header ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+#header ul li
+{
+    display:inline-block ;
+    margin: 10px 15px;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#header ul li a::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+#header ul li a:hover::after
+{
+    width: 100%;
 }
