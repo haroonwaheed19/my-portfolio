@@ -12,3 +12,9 @@ ul{
 li{
     padding-right: 15px;
 }
+
+body
+{
+    background-color: #080808;
+    color: white;
+}
